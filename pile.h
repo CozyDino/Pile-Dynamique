@@ -16,9 +16,9 @@ typedef struct
 	cell* sommet;
 } pile;
 
-pile init_pile();
-bool pile_vide(pile);
-void empiler(pile*, element);
-void depiler(pile*);
-element sommet_pile(pile);
+pile init_pile(); //init the stack
+bool pile_vide(pile); //return true if the stack is empty
+void empiler(pile*, element); //put an element at the top of the stack
+void depiler(pile*); //remove an element of the top of the stack
+element sommet_pile(pile); //return the element at the top of the stack
 #endif
